@@ -106,12 +106,12 @@ const Contacto = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white pt-16">
+    <div className="bg-white text-white pt-16">
       {/* Hero Section */}
       <section
         ref={heroRef}
         className={`relative py-40 bg-cover bg-center transition-all duration-700`}
-        style={{ backgroundImage: `url(/public/img/img8.jpeg)` }}
+        style={{ backgroundImage: `url(/public/img/img14.jpeg)` }}
       >
         <div className="absolute inset-0 bg-black/30 z-0 backdrop-blur-sm"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
@@ -137,18 +137,18 @@ const Contacto = () => {
       {/* Contact Form */}
       <section
         ref={formRef}
-        className={`py-20 bg-black transition-all duration-700 ${formVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        className={`py-20 bg-gray-900 transition-all duration-700 ${formVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
-              Envíanos un <span className="text-blue-500">Mensaje</span>
+              Envíanos un <span className="text-blue-600">Mensaje</span>
             </h2>
-            <p className="text-xl text-gray-500">
+            <p className="text-xl text-white">
               Completa el formulario y nos pondremos en contacto contigo
             </p>
           </div>
-          <form onSubmit={handleSubmit} className="bg-gray-900 p-8 rounded-lg">
+          <form onSubmit={handleSubmit} className="bg-gray-900 p-8 rounded-lg shadow-lg shadow-black">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
                 <label className="block text-white font-medium mb-2">Nombre Completo *</label>
@@ -238,23 +238,23 @@ const Contacto = () => {
       {/* FAQ Section */}
       <section
         ref={faqRef}
-        className={`py-20 bg-gray-900 transition-all duration-700 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        className={`py-20 bg-white transition-all duration-700 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Preguntas <span className="text-blue-500">Frecuentes</span>
+            <h2 className="text-4xl font-bold text-blue-600 mb-4">
+              Preguntas <span className="text-blue-600">Frecuentes</span>
             </h2>
-            <p className="text-xl text-gray-500">
+            <p className="text-xl text-black">
               Respuestas a las consultas más comunes
             </p>
           </div>
 
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-black/50 p-6 rounded-lg">
+              <div key={index} className="bg-gray-900 p-6 rounded-lg">
                 <h3 className="text-lg font-bold text-blue-500 mb-3">{faq.question}</h3>
-                <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                <p className="text-white leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -276,7 +276,7 @@ const Contacto = () => {
           </div>
         </div>
       </section> */}
-      {/* Map Section */}
+      {/* Map Section
       <section
         ref={ubicacionRef}
         className={`py-20 bg-black transition-all duration-700 ${ubicacionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
@@ -345,12 +345,12 @@ const Contacto = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* Emergency Contact */}
       <section
         ref={ctaRef}
-        className={`py-20 bg-gradient-to-r from-blue-600 to-blue-800 transition-all duration-700 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        className={`py-20 bg-arcoColorTwo from-blue-600 to-blue-800 transition-all duration-700 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
       >
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-white mb-4">

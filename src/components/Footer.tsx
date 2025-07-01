@@ -10,9 +10,9 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex-shrink-0 mb-10">
-             <Link to="/" className="text-2xl font-bold text-blue-400">
+             <Link to="/" className="text-2xl font-bold text-white font-lucida-handwriting ">
                           ARCO
-                          <span className="text-white ml-1">Ingeniería</span>
+                          <span className="text-white ml-1 text-arcoColor font-sans font-medium">Ingeniería y Diseño</span>
                         </Link>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
@@ -40,8 +40,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <MapPin className="w-10 h-10 text-blue-400" />
-                <span className="text-gray-300">ELVIRA QUINTANA #435 COLONIA LA JOYA 2ª SECCIÓN QUERÉTARO, QRO. C.P. 76180</span>
+                <MapPin className="w-5 h-5 text-blue-400" />
+                <span className="text-gray-300">Querétaro, Qro.</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-blue-400" />

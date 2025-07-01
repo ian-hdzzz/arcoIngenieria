@@ -15,7 +15,7 @@ const Home = () => {
   const [ctaRef, ctaVisible] = useScrollReveal<HTMLDivElement>();
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-white text-white">
       {/* Botón flotante de WhatsApp */}
       <a
         href="https://wa.me/5214423278984?text=Hola!%20Me%20interesa%20cotizar%20en%20arco%20ingenier%C3%ADa"
@@ -44,27 +44,27 @@ const Home = () => {
         {/* Content */}
         <div className="relative z-20 text-center max-w-4xl mx-auto px-6 sm:px-4">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 animate-fade-in">
-            <span className="text-white">ARCO</span>
+            <span className="text-white font-lucida-handwriting">ARCO</span>
             <br />
-            <span className="text-arcoColor">Ingeniería y Diseño</span>
+            <span className="text-arcoColor font-medium drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">Ingeniería y Diseño</span>
           </h1>
-          <p className="text-base sm:text-xl md:text-2xl text-gray-100 mb-4 sm:mb-8 animate-fade-in delay-150">
+          <p className="text-base sm:text-xl md:text-2xl text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] mb-4 sm:mb-8 animate-fade-in delay-150">
             Construyendo el futuro de Querétaro desde 2010
           </p>
-          <p className="text-sm sm:text-lg text-gray-200 mb-8 sm:mb-12 max-w-2xl mx-auto animate-fade-in delay-300">
+          <p className="text-sm sm:text-lg text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] mb-8 sm:mb-12 max-w-2xl mx-auto animate-fade-in delay-300">
             Especialistas en obra civil, urbanización y desarrollo inmobiliario. 
             Tu hogar ideal nos espera.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center animate-fade-in delay-500">
             <Link 
               to="/home" 
-              className="bg-arcoColor hover:bg-blue-700 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              className="bg-arcoColorTwo hover:bg-arcoColorTwo text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
             >
               Cotiza tu Proyecto
             </Link>
             <Link 
               to="/servicios" 
-              className="border-2 border-blue-400 text-blue-400 hover:bg-arcoColor hover:text-black px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-arcoColorTwo text-white hover:bg-arcoColor  hover:border-arcoColor hover:text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105"
             >
               Ver Servicios
             </Link>
@@ -75,7 +75,7 @@ const Home = () => {
       <section
         ref={statsRef}
         className={
-          `py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white w-full transition-all duration-1000 ` +
+          `py-20 bg-gradient-to-r from-arcoColor to-arcoColorTwo text-white w-full transition-all duration-1000 ` +
           (statsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')
         }
       >
@@ -96,16 +96,16 @@ const Home = () => {
       <section
         ref={servRef}
         className={
-          `py-20 bg-black transition-all duration-1000 ` +
+          `py-20 bg-white transition-all duration-1000 ` +
           (servVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')
         }
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
+            <h2 className="text-4xl font-bold text-arcoColorTwo mb-4">
               Nuestros Servicios
             </h2>
-            <p className="text-xl text-gray-400">
+            <p className="text-xl text-black">
               Soluciones integrales para tu proyecto inmobiliario
             </p>
           </div>
@@ -176,7 +176,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link 
               to="/servicios" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
+              className="bg-arcoColorTwo text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300"
             >
               Ver Todos los Servicios
             </Link>
@@ -189,7 +189,7 @@ const Home = () => {
       <section
         ref={ctaRef}
         className={
-          `py-20 bg-gradient-to-r from-blue-600 to-blue-800 transition-all duration-1000 ` +
+          `py-20 bg-arcoColorTwo transition-all duration-1000 ` +
           (ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8')
         }
       >

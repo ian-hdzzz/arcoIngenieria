@@ -54,7 +54,7 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = '', prefix = '' }: Ani
   }, [isVisible, end, duration]);
 
   return (
-    <div ref={counterRef} className="text-4xl font-bold text-blue-500">
+    <div ref={counterRef} className="text-4xl font-bold text-arcoColor">
       {prefix}{count}{suffix}
     </div>
   );

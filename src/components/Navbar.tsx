@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -24,9 +23,9 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center h-full">
             <Link to="/" >
               <img 
-                src='/img/logo3.png'
+                src='/logo3.png'
                 alt="Arco Ingeniería y Diseño" 
-                className="h-12 w-auto filter brightness-0 invert"
+                className="h-12 w-auto"
               />
             </Link>
           </div>
@@ -63,7 +62,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-black/95 backdrop-blur-sm">
+          <div className="md:hidden bg-white backdrop-blur-sm">
             <div className="px-4 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <Link
@@ -72,8 +71,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-4 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                     isActive(item.path)
-                      ? 'bg-blue-600 text-white'
-                      : 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                      ? 'bg-arcoColorTwo text-white'
+                      : 'text-black hover:bg-arcoColorTwo hover:text-white'
                   }`}
                 >
                   {item.name}

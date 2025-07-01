@@ -11,7 +11,7 @@ const Stats = () => {
   });
 
   const finalCounts = {
-    years: 14,
+    years: 15,
     projects: 1000,
     clients: 200,
     engineers: 25
@@ -82,7 +82,7 @@ const Stats = () => {
               <div className="text-4xl lg:text-5xl font-bold mb-2">
                 {stat.number}{stat.suffix}
               </div>
-              <div className="text-blue-100 text-lg font-medium">
+              <div className="text-white  drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] text-lg font-medium">
                 {stat.label}
               </div>
             </div>

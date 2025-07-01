@@ -84,7 +84,7 @@ const Nosotros = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl font-bold text-white mb-6">
-                Sobre <span className="text-blue-600">ARCO</span>
+                Sobre <span className="text-arcoColor">ARCO</span>
               </h1>
               <p className="text-xl text-gray-100 mb-8">
                 Más de 14 años construyendo el futuro de Querétaro con excelencia, 
@@ -114,7 +114,7 @@ const Nosotros = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-blue-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-black/70 p-8 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl ">
@@ -145,7 +145,7 @@ const Nosotros = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">
-              Nuestra <span className="text-blue-400">Historia</span>
+              Nuestra <span className="text-arcoColorTwo">Historia</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Una década y media de crecimiento, aprendizaje y construcción del futuro de Querétaro
@@ -162,7 +162,7 @@ const Nosotros = () => {
                 top: 0,
                 bottom: 'auto',
                 opacity: lineHeight > 0 ? 1 : 0,
-                background: 'linear-gradient(to bottom, #2563eb 80%, #60a5fa 95%, #fff 100%)',
+                background: 'linear-gradient(to bottom, #2563eb 80%, #A1D8D6 95%, #fff 100%)',
                 boxShadow: '0 0 16px 2px #60a5fa99',
                 transitionProperty: 'height, opacity'
               }}
@@ -174,7 +174,7 @@ const Nosotros = () => {
                 top: 0,
                 bottom: 'auto',
                 opacity: lineHeight > 0 ? 1 : 0,
-                background: 'linear-gradient(to bottom, #2563eb 80%, #60a5fa 95%, #fff 100%)',
+                background: 'linear-gradient(to bottom, #2563eb 80%, #A1D8D6 95%, #fff 100%)',
                 boxShadow: '0 0 16px 2px #60a5fa99',
                 transitionProperty: 'height, opacity'
               }}
@@ -234,56 +234,21 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* Our Team */}
-      <section className="py-20 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Nuestro <span className="text-blue-500">Equipo</span>
-            </h2>
-            <p className="text-xl text-white">
-              Profesionales capacitados y comprometidos con la excelencia
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-black/50 rounded-lg p-6 text-center transition-all duration-300 group hover:scale-105 hover:border-2 hover:border-blue-500 hover:bg-black/70">
-                <div className="relative mb-6 flex items-center justify-center">
-                  {/* <img 
-                    src={member.image}
-                    alt={member.name}
-                    className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-blue-400 group-hover:scale-110 transition-transform duration-300"
-                  /> */}
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="96" height="96" fill="#60a5fa" className="mx-auto">
-                    <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
-                <p className="text-blue-400 font-semibold mb-2">{member.position}</p>
-                <p className="text-gray-400 text-sm mb-2">{member.specialization}</p>
-                <p className="text-gray-500 text-sm">{member.experience} de experiencia</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Values */}
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">
-              Nuestros <span className="text-blue-500">Valores</span>
+              Nuestros <span className="text-arcoColorTwo">Valores</span>
             </h2>
-            <p className="text-xl text-gray-400">
+            <p className="text-xl text-white">
               Los principios que guían cada uno de nuestros proyectos
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-arcoColorTwo rounded-full mx-auto mb-6 flex items-center justify-center">
                 {/* Trofeo: Excelencia */}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5v2.25m7.5-2.25v2.25m-11.25 0A2.25 2.25 0 006 8.25v2.25a6 6 0 0012 0V8.25a2.25 2.25 0 001.5-2.25m-15 0h15" />
@@ -298,7 +263,7 @@ const Nosotros = () => {
             </div>
 
             <div className="text-center bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-arcoColorTwo rounded-full mx-auto mb-6 flex items-center justify-center">
                 {/* Apretón de manos: Confianza */}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 15l-3.5-3.5a2.121 2.121 0 010-3l.5-.5a2.121 2.121 0 013 0l.5.5.5-.5a2.121 2.121 0 013 0l.5.5a2.121 2.121 0 010 3L12 15zm0 0l2.5 2.5a2.121 2.121 0 003 0l.5-.5a2.121 2.121 0 000-3L17 13" />
@@ -312,7 +277,7 @@ const Nosotros = () => {
             </div>
 
             <div className="text-center bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-arcoColorTwo rounded-full mx-auto mb-6 flex items-center justify-center">
                 {/* Bombilla: Innovación */}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 18h6m-3 0v2m-4-2a4 4 0 018 0c0 1.657-1.343 3-3 3s-3-1.343-3-3zm3-16a7 7 0 00-7 7c0 2.21 1.343 4.21 3.5 5.5M12 2a7 7 0 017 7c0 2.21-1.343 4.21-3.5 5.5" />
@@ -326,7 +291,7 @@ const Nosotros = () => {
             </div>
 
             <div className="text-center bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-arcoColorTwo rounded-full mx-auto mb-6 flex items-center justify-center">
                 {/* Hoja: Sustentabilidad */}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 0C7.03 4 3 8.03 3 13c0 3.866 3.134 7 7 7s7-3.134 7-7c0-4.97-4.03-9-9-9zm0 0v1m0 0c2.21 0 4 1.79 4 4 0 2.21-1.79 4-4 4s-4-1.79-4-4c0-2.21 1.79-4 4-4z" />
@@ -340,7 +305,7 @@ const Nosotros = () => {
             </div>
 
             <div className="text-center bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-arcoColorTwo rounded-full mx-auto mb-6 flex items-center justify-center">
                 {/* Personas: Compromiso */}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a4 4 0 00-4-4h-1M7 20H2v-2a4 4 0 014-4h1m6-4a4 4 0 11-8 0 4 4 0 018 0zm6 4a4 4 0 10-8 0 4 4 0 008 0z" />
@@ -354,7 +319,7 @@ const Nosotros = () => {
             </div>
 
             <div className="text-center bg-gray-900 p-8 rounded-lg hover:bg-gray-800 transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-16 h-16 bg-arcoColorTwo rounded-full mx-auto mb-6 flex items-center justify-center">
                 {/* Rayo: Eficiencia */}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-8 h-8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -371,7 +336,7 @@ const Nosotros = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+      <section className="py-20 bg-arcoColorTwo ">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-6">
             ¿Listo para Construir con Nosotros?
