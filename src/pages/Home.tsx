@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AnimatedCounter from '../components/AnimatedCounter';
 import VerticalCarousel from "../components/VerticalCarousel";
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import ClientsSlider from '../components/ClientsSlider';
 
 const Home = () => {
   // Hero
@@ -60,11 +61,11 @@ const Home = () => {
               to="/home" 
               className="bg-arcoColorTwo hover:bg-arcoColorTwo text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
             >
-              Cotiza tu Proyecto
+              Contáctanos
             </Link>
             <Link 
               to="/servicios" 
-              className="border-2 border-arcoColorTwo text-white hover:bg-arcoColor  hover:border-arcoColor hover:text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-arcoColorTwo text-white hover:bg-arcoColor hover:border-arcoColor hover:text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105"
             >
               Ver Servicios
             </Link>
@@ -109,70 +110,76 @@ const Home = () => {
               Soluciones integrales para tu proyecto inmobiliario
             </p>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* ...existing code for service cards... */}
+            {/* Servicio 1 */}
             <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
               <div
                 className="h-48 bg-cover bg-center"
-                style={{ backgroundImage: `url('/public/img/img24.jpg')` }}
-              ></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">Obra Civil</h3>
-                <p className="text-gray-400">Construcción profesional con los más altos estándares de calidad.</p>
-              </div>
-            </div>
-            <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
-              <div
-                className="h-48 bg-cover bg-center"
-                style={{ backgroundImage: `url('/public/img/img14.jpeg')` }}
-              ></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">Vivienda Individual</h3>
-                <p className="text-gray-400">Tu hogar personalizado, diseñado según tus necesidades.</p>
-              </div>
-            </div>
-            <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
-              <div
-                className="h-48 bg-cover bg-center"
-                style={{ backgroundImage: `url('/public/img/img25.jpg')` }}
-              ></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">Urbanización</h3>
-                <p className="text-gray-400">Desarrollo integral de fraccionamientos y zonas habitacionales.</p>
-              </div>
-            </div>
-            {/* Segunda fila de servicios adicionales */}
-            <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
-              <div
-                className="h-48 bg-cover bg-center"
-                style={{ backgroundImage: `url('/public/img/img2.jpeg')` }}
-              ></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">Redes de Agua y Drenaje</h3>
-                <p className="text-gray-400">Instalación profesional de redes hidráulicas y sanitarias.</p>
-              </div>
-            </div>
-            <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
-              <div
-                className="h-48 bg-cover bg-center"
-                style={{ backgroundImage: `url('/public/img/img16.jpeg')` }}
+                style={{ backgroundImage: `url('/img/img16.jpeg')` }}
               ></div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">Vivienda en Serie</h3>
                 <p className="text-gray-400">Desarrollos habitacionales con procesos eficientes y entrega rápida.</p>
               </div>
             </div>
+            {/* Servicio 2 */}
             <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
               <div
                 className="h-48 bg-cover bg-center"
-                style={{ backgroundImage: `url('/public/img/img26.jpg')` }}
+                style={{ backgroundImage: `url('/img/img14.jpeg')` }}
+              ></div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-2">Vivienda Individual</h3>
+                <p className="text-gray-400">Tu hogar personalizado, diseñado según tus necesidades.</p>
+              </div>
+            </div>
+            {/* Servicio 3 */}
+            <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+              <div
+                className="h-48 bg-cover bg-center"
+                style={{ backgroundImage: `url('/img/img26.jpg')` }}
               ></div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white mb-2">Naves Industriales</h3>
                 <p className="text-gray-400">Construcción de espacios industriales y comerciales adaptados.</p>
               </div>
             </div>
+            {/* Servicio 4 */}
+            <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+              <div
+                className="h-48 bg-cover bg-center"
+                style={{ backgroundImage: `url('/img/img24.jpg')` }}
+              ></div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-2">Obra Civil</h3>
+                <p className="text-gray-400">Construcción profesional con los más altos estándares de calidad.</p>
+              </div>
+            </div>
+            {/* Servicio 5 */}
+            <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+              <div
+                className="h-48 bg-cover bg-center"
+                style={{ backgroundImage: `url('/img/img25.jpg')` }}
+              ></div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-2">Urbanización</h3>
+                <p className="text-gray-400">Desarrollo integral de fraccionamientos y zonas habitacionales.</p>
+              </div>
+            </div>
+            {/* Servicio 6 */}
+            <div className="group bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+              <div
+                className="h-48 bg-cover bg-center"
+                style={{ backgroundImage: `url('/img/img2.jpeg')` }}
+              ></div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-white mb-2">Redes de Agua y Drenaje</h3>
+                <p className="text-gray-400">Instalación profesional de redes hidráulicas y sanitarias.</p>
+              </div>
+            </div>
           </div>
+
           <div className="text-center mt-12">
             <Link 
               to="/servicios" 
@@ -184,7 +191,9 @@ const Home = () => {
         </div>
       </section>
 
-     
+      {/* Slider de Clientes */}
+      <ClientsSlider />
+
       {/* CTA Section */}
       <section
         ref={ctaRef}
@@ -195,17 +204,18 @@ const Home = () => {
       >
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-6">
-            ¿Listo para Construir tu Futuro?
+            Todo gran proyecto comienza
+            con <br /> una buena decisión.
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Obtén una cotización personalizada para tu proyecto. 
-            Especialistas en parejas jóvenes y recién casados.
+          <p className="text-xl text-blue-100 mt-8 mb-8">
+            ¿Tienes un proyecto en mente? 
+            Escríbenos y comienza a construir con expertos.
           </p>
           <Link 
-            to="/cotizador" 
+            to="/" 
             className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 inline-block"
           >
-            Comenzar Cotización
+            CONTÁCTANOS
           </Link>
         </div>
       </section>

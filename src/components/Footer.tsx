@@ -27,11 +27,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Obra Civil</a></li>
-              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Construcción Residencial</a></li>
+              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Vivienda en Serie</a></li>
+              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Vivienda Individual</a></li>
               <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Naves Industriales</a></li>
-              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Proyectos Ejecutivos</a></li>
-              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Gestión Inmobiliaria</a></li>
+              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Obra Civil</a></li>
+              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Urbanización</a></li>
+              {/* <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Construcción Residencial</a></li>
+              <li><a href="#servicios" className="hover:text-blue-400 transition-colors">Proyectos Ejecutivos</a></li> */}
             </ul>
           </div>
 
@@ -49,7 +51,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-300">luisponce@arco-ingenieria.com</span>
+                <span className="text-gray-300">informes@arco-ingeniria.com</span>
               </div>
             </div>
           </div>
@@ -58,7 +60,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Arco Ingeniería y Diseño. Todos los derechos reservados.
+              © 2025 Arco Ingeniería y Diseño. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors text-sm">

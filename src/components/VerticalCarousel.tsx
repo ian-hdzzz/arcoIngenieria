@@ -13,19 +13,19 @@ const VerticalCarousel = () => {
 
   const images = [
     // Imágenes originales
-    '/public/img/img2.jpeg',
-    '/public/img/img4.jpeg',
-    '/public/img/img10.jpeg',
-    '/public/img/img13.jpeg',
-    '/public/img/img25.jpg',
-    '/public/img/img27.png',
-    '/public/img/img28.png',
-    '/public/img/img3.jpeg',
+    '/img/img2.jpeg',
+    '/img/img4.jpeg',
+    '/img/img10.jpeg',
+    '/img/img13.jpeg',
+    '/img/img25.jpg',
+    '/img/img27.png',
+    '/img/img28.png',
+    '/img/img3.jpeg',
     // Nuevas imágenes
-    '/public/img/img1.jpeg',
-    '/public/img/img4.jpeg',
-    '/public/img/img6.jpeg',
-    '/public/img/img5.jpeg'
+    '/img/img1.jpeg',
+    '/img/img4.jpeg',
+    '/img/img6.jpeg',
+    '/img/img5.jpeg'
   ];
 
   useEffect(() => {

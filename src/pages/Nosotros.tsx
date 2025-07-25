@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import AnimatedCounter from '../components/AnimatedCounter';
-
+import ClientsSlider from '../components/ClientsSlider';
+import VerticalCarousel from "../components/VerticalCarousel";
 const Nosotros = () => {
   const teamMembers = [
     {
@@ -87,7 +88,7 @@ const Nosotros = () => {
                 Sobre <span className="text-arcoColor">ARCO</span>
               </h1>
               <p className="text-xl text-gray-100 mb-8">
-                Más de 14 años construyendo el futuro de Querétaro con excelencia, 
+                Más de 15 años construyendo el futuro de Querétaro con excelencia, 
                 innovación y compromiso con nuestros clientes.
               </p>
               <div className="grid grid-cols-2 gap-8">
@@ -103,7 +104,7 @@ const Nosotros = () => {
             </div>
             <div className="relative">
               <img 
-                src="../public/img/img28.png"
+                src="/img/img28.png"
                 alt="ARCO Ingeniería y Diseño"
                 className="rounded-lg shadow-2xl"
               />
@@ -148,7 +149,7 @@ const Nosotros = () => {
               Nuestra <span className="text-arcoColorTwo">Historia</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Una década y media de crecimiento, aprendizaje y construcción del futuro de Querétaro
+              Más de una decada de crecimiento, aprendizaje y construcción del futuro de Querétaro
             </p>
           </div>
 
@@ -334,7 +335,8 @@ const Nosotros = () => {
           </div>
         </div>
       </section>
-
+      {/* Slider de Clientes */}
+      {/* <ClientsSlider /> */}
       {/* CTA Section */}
       <section className="py-20 bg-arcoColorTwo ">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -352,12 +354,12 @@ const Nosotros = () => {
             >
               Contactar
             </a>
-            <a 
+            {/* <a 
               href="/cotizador" 
               className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105"
             >
               Cotizar Proyecto
-            </a>
+            </a> */}
           </div>
         </div>
       </section>

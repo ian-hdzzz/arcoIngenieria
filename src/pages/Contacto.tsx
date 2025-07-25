@@ -111,7 +111,7 @@ const Contacto = () => {
       <section
         ref={heroRef}
         className={`relative py-40 bg-cover bg-center transition-all duration-700`}
-        style={{ backgroundImage: `url(/public/img/img14.jpeg)` }}
+        style={{ backgroundImage: `url(/img/img14.jpeg)` }}
       >
         <div className="absolute inset-0 bg-black/30 z-0 backdrop-blur-sm"></div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
@@ -127,12 +127,12 @@ const Contacto = () => {
         </div>
       </section>
 
-      <div
+      {/* <div
         ref={calendlyRef}
         className="calendly-inline-widget"
         data-url="https://calendly.com/ianhdez2020/30min"
         style={{ minWidth: 320, height: 700 }}
-      />
+      /> */}
 
       {/* Contact Form */}
       <section
@@ -235,31 +235,7 @@ const Contacto = () => {
         </div>
       </section>
     
-      {/* FAQ Section */}
-      <section
-        ref={faqRef}
-        className={`py-20 bg-white transition-all duration-700 ${faqVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-blue-600 mb-4">
-              Preguntas <span className="text-blue-600">Frecuentes</span>
-            </h2>
-            <p className="text-xl text-black">
-              Respuestas a las consultas más comunes
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <div key={index} className="bg-gray-900 p-6 rounded-lg">
-                <h3 className="text-lg font-bold text-blue-500 mb-3">{faq.question}</h3>
-                <p className="text-white leading-relaxed">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* <section className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

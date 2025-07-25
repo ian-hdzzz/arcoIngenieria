@@ -38,12 +38,12 @@ const Servicios = () => {
   ];
 
   const clients = [
-    { name: "Puentes vehiculares, Querétaro.", image: "../public/img/img29.jpg" },
-    { name: "Pitahayas, Zibatá", image: "../public/img/img25.jpg" },
-    { name: "Edificio Nouvalia, Qro.", image: "../public/img/img28.png" },
-    { name: "Condominios Cassis, El Marques, Qro.", image: "../public/img/img16.jpeg" },
-    { name: "Fraccionamiento: Puerta Verona, Sonterra", image: "../public/img/img27.png" },
-    { name: "Naves Industriales - Bernando Quintana, Qro.", image: "../public/img/img26.jpg" },
+    { name: "Puentes vehiculares, Querétaro.", image: "/img/img29.jpg" },
+    { name: "Pitahayas, Zibatá", image: "/img/img25.jpg" },
+    { name: "Edificio Nouvalia, Qro.", image: "/img/img28.png" },
+    { name: "Condominios Cassis, El Marques, Qro.", image: "/img/img16.jpeg" },
+    { name: "Fraccionamiento: Puerta Verona, Sonterra", image: "/img/img27.png" },
+    { name: "Naves Industriales - Bernando Quintana, Qro.", image: "/img/img26.jpg" },
   ];
 
   // Animaciones scroll
@@ -59,7 +59,7 @@ const Servicios = () => {
       <section
         ref={heroRef}
         className={`relative py-40 bg-cover bg-center transition-all duration-700`}
-        style={{ backgroundImage: `url(/public/img/img18.jpeg)` }}
+        style={{ backgroundImage: `url(/img/img18.jpeg)` }}
       >
         <div className="absolute inset-0 bg-black/15 z-0 backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
@@ -183,10 +183,10 @@ const Servicios = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-arcoColorTwo mb-4">
-              Nuestros <span className="text-arcoColorTwo">Clientes</span>
+              Nuestros <span className="text-arcoColorTwo">Proyectos</span>
             </h2>
             <p className="text-xl text-black">
-              Proyectos realizados con excelencia y dedicación
+              Compromiso en cada etapa, excelencia en cada resultado
             </p>
           </div>
 
@@ -232,12 +232,12 @@ const Servicios = () => {
             >
               Contactar Ahora
             </a>
-            <a 
+            {/* <a 
               href="/cotizador" 
               className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105"
             >
               Obtener Cotización
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
